@@ -23,7 +23,10 @@ Here are the desired columns based on .data/desired-format.csv:
 
 1. .data/uthmani.json extracted from https://qul.tarteel.ai/resources/quran-script/56 :
 
-   1. Uthmani script
+   1. surah
+   2. ayah
+   3. word index
+   4. word in uthmani transcript
 2. https://huggingface.co/datasets/Buraaq/quran-md-ayahs :
 
    1. surah id
@@ -36,7 +39,9 @@ Here are the desired columns based on .data/desired-format.csv:
    8. ayah transliteration
 3. ./data/indopak.json :
 
-   1. Indopak script
+   1. surah
+   2. ayah
+   3. indopak transcript
 4. ./data/letters-word-count-quran.xlsx : (needs to be processed first)
 
    1. letter count
@@ -45,9 +50,9 @@ Here are the desired columns based on .data/desired-format.csv:
 ## Todo
 
 * [ ] Pretty print all data that we have (except the excel file)
-  * [ ] indopak.json
+  * [x] indopak.json
   * [ ] transliteration from hugging face
-  * [ ] uthmani.json
+  * [x] uthmani.json
 * [ ] process excel file
   * [ ] manually extract csv for (most likely) each surah
   * [ ] turn the csv into one big csv
