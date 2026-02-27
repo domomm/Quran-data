@@ -34,9 +34,10 @@ Here are the desired columns based on .data/desired-format.csv:
    3. surah name ar
    4. surah name en
    5. surah name transliteration
-   6. ayah count
-   7. ayah en
-   8. ayah transliteration
+   6. ayah ar (uthmani)
+   7. ayah count
+   8. ayah en
+   9. ayah transliteration
 3. ./data/indopak.json :
 
    1. surah
@@ -50,9 +51,9 @@ Here are the desired columns based on .data/desired-format.csv:
 ## Todo
 
 * [ ] Pretty print all data that we have (except the excel file)
-  * [x] indopak.json
+  * [X] indopak.json
   * [ ] transliteration from hugging face
-  * [x] uthmani.json
+  * [X] uthmani.json
 * [ ] process excel file
   * [ ] manually extract csv for (most likely) each surah
   * [ ] turn the csv into one big csv
