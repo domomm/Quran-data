@@ -1,6 +1,6 @@
-# Quran whole database
+# Quran database
 
-This repository combines multiple data sources of Quran data to obtain a dataset with the following columns:
+This repository combines multiple data sources of Quran data to obtain a dataset with the following information:
 
 * surah id
 * ayah id
