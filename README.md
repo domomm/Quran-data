@@ -51,7 +51,7 @@ The source data can be found in data/source. Here is the list of the source data
 
    1. letter count per ayah
    2. word count per ayah
-4. data/quran_word_and_letter_count.csv. It is the exported csv of data/letters-word-count-quran.xlsx.
+4. data/quran-word-and-letter-count.csv. It is the exported csv of data/letters-word-count-quran.xlsx.
 5. data/desired-format.csv: Example of desired format
 
 ## Python Files (and notebook)
