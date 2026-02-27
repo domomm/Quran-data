@@ -17,7 +17,7 @@ This repository combines multiple data sources of Quran data to obtain a dataset
 
 ## Usage
 
-You can simply get the output files if that is all you need. They can be found in the data folder. Here are the output files:
+You can simply get the output files if that is all you need. They can be found in the data/out folder. Here are the output files that you can find along with their short description:
 
 1. quran-md-ayahs-no-audio.csv: processed dataset from Burqaan/quran-md-ayahs from huggingface.
 2. quran-md-indopak-joined.csv: joined processed dataset from Burqaan/quran-md-ayahs with indopak arabic text
@@ -27,9 +27,11 @@ If you would like to reproduce the outputs, please run the following in order:
 1. quran_md_ayahs_process_raw.py
 2. join_quran_md_indopak.py
 
-## Original Data
+## Source Data
 
-1. https://huggingface.co/datasets/Buraaq/quran-md-ayahs :
+The source data can be found in data/source. Here is the list of the source data, along with descriptions.
+
+1. https://huggingface.co/datasets/Buraaq/quran-md-ayahs. Contains the following columns:
 
    1. surah id
    2. ayah id
@@ -40,18 +42,19 @@ If you would like to reproduce the outputs, please run the following in order:
    7. ayah count
    8. ayah en
    9. ayah transliteration
-2. ./data/indopak.json :
+2. data/indopak.json. Contain the following columns:
 
    1. surah
    2. ayah
    3. indopak transcript
-3. ./data/letters-word-count-quran.xlsx : (needs to be processed first)
+3. data/letters-word-count-quran.xlsx. Contain the following information:
 
-   1. letter count
-   2. word count
-4. ./data/desired-format.csv: Example of desired format
+   1. letter count per ayah
+   2. word count per ayah
+4. data/quran_word_and_letter_count.csv. It is the exported csv of data/letters-word-count-quran.xlsx.
+5. data/desired-format.csv: Example of desired format
 
-## Files
+## Python Files (and notebook)
 
 ### quran_md_ayahs_process_raw.py
 
